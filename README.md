@@ -1,24 +1,14 @@
-# README
+# Clickjob
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Dependencies
 
-Things you may want to cover:
+- Ruby 2.6.4
+- Postgres >= 11.0
 
-* Ruby version
+## Deployment
+The application is currently hosted at https://clickjob-api.herokuapp.com/ if you want to to develop locally I'd suggest to start the server on port 3001 with rails s -p 3001 and update the client endpoint to point to the server locally
 
-* System dependencies
+## Implementation notes
+This api uses the default functionality of the session to handle the authentication instead of using an external gem like `devise`. 
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Use rake routes to see all the routes available
