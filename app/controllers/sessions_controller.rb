@@ -26,7 +26,7 @@ class SessionsController < ApplicationController
       }
     else 
       render json: {
-        logged_in: false
+        logged_in: false,
       }
     end
   end

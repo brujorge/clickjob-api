@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Favourite Jobs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Salary</th>
+      <th>Description</th>
+      <th>Functions</th>
+      <th>Benefits</th>
+      <th>Remote</th>
+      <th>City</th>
+      <th>Country</th>
+      <th>Seniority</th>
+      <th>Logo url</th>
+      <th>Modality</th>
+      <th>Company name</th>
+      <th>Company description</th>
+      <th>Job</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @favourite_jobs.each do |favourite_job| %>
+      <tr>
+        <td><%= favourite_job.title %></td>
+        <td><%= favourite_job.salary %></td>
+        <td><%= favourite_job.description %></td>
+        <td><%= favourite_job.functions %></td>
+        <td><%= favourite_job.benefits %></td>
+        <td><%= favourite_job.remote %></td>
+        <td><%= favourite_job.city %></td>
+        <td><%= favourite_job.country %></td>
+        <td><%= favourite_job.seniority %></td>
+        <td><%= favourite_job.logo_url %></td>
+        <td><%= favourite_job.modality %></td>
+        <td><%= favourite_job.company_name %></td>
+        <td><%= favourite_job.company_description %></td>
+        <td><%= favourite_job.job_id %></td>
+        <td><%= favourite_job.user_id %></td>
+        <td><%= link_to 'Show', favourite_job %></td>
+        <td><%= link_to 'Edit', edit_favourite_job_path(favourite_job) %></td>
+        <td><%= link_to 'Destroy', favourite_job, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+

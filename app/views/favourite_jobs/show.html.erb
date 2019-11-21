@@ -1,0 +1,79 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @favourite_job.title %>
+</p>
+
+<p>
+  <strong>Salary:</strong>
+  <%= @favourite_job.salary %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @favourite_job.description %>
+</p>
+
+<p>
+  <strong>Functions:</strong>
+  <%= @favourite_job.functions %>
+</p>
+
+<p>
+  <strong>Benefits:</strong>
+  <%= @favourite_job.benefits %>
+</p>
+
+<p>
+  <strong>Remote:</strong>
+  <%= @favourite_job.remote %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @favourite_job.city %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @favourite_job.country %>
+</p>
+
+<p>
+  <strong>Seniority:</strong>
+  <%= @favourite_job.seniority %>
+</p>
+
+<p>
+  <strong>Logo url:</strong>
+  <%= @favourite_job.logo_url %>
+</p>
+
+<p>
+  <strong>Modality:</strong>
+  <%= @favourite_job.modality %>
+</p>
+
+<p>
+  <strong>Company name:</strong>
+  <%= @favourite_job.company_name %>
+</p>
+
+<p>
+  <strong>Company description:</strong>
+  <%= @favourite_job.company_description %>
+</p>
+
+<p>
+  <strong>Job:</strong>
+  <%= @favourite_job.job_id %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @favourite_job.user_id %>
+</p>
+
+<%= link_to 'Edit', edit_favourite_job_path(@favourite_job) %> |
+<%= link_to 'Back', favourite_jobs_path %>
